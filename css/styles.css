@@ -23,10 +23,10 @@ ol {
   margin: 0;
   padding-left: 0;
 } */
-
+/* 
 img {
   display: block;
-}
+} */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -407,12 +407,11 @@ margin-right: 0;
 .portfolio-photo-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  gap: 48px 24px;
+  justify-content: center;
 }
 
 .portfolio-photo-item {
-  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-photo-title {
