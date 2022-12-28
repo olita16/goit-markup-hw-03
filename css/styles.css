@@ -23,10 +23,10 @@ ol {
   margin: 0;
   padding-left: 0;
 } */
-/* 
+
 img {
   display: block;
-} */
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -78,10 +78,8 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-
   outline: 1px solid tomato;
 }
-
 
 /* HEADER */
 
@@ -112,7 +110,7 @@ body {
   padding-bottom: 24px;
 }
 
-.header >.container {
+.header > .container {
   display: flex;
 }
 
@@ -132,7 +130,7 @@ body {
 }
 
 .header-item: :last-child {
-margin-right: 0;
+  margin-right: 0;
 }
 
 .web {
@@ -189,7 +187,7 @@ margin-right: 0;
 .work {
   background-color: var(--main-color);
   text-align: center;
-  padding-top: 188px ;
+  padding-top: 188px;
   padding-bottom: 188px;
 }
 
@@ -223,6 +221,7 @@ margin-right: 0;
 .turn {
   padding-top: 120px;
   padding-bottom: 120px;
+  flex-basis: calc ((100% - 72px) / 4);
 }
 
 .turn-visually-hidden {
@@ -230,7 +229,7 @@ margin-right: 0;
 
 .turn-list {
   display: flex;
-  gap: 24p
+  gap: 24px;
 }
 
 .turn-item {
@@ -250,9 +249,7 @@ margin-right: 0;
   letter-spacing: 0.02em;
   color: var(--text-color);
   min-width: 264px;
-  /* margin-right: 24px; */
 }
-
 
 .photo-title {
   font-family: "Roboto", sans-serif;
@@ -275,14 +272,10 @@ margin-right: 0;
   /* width: calc((100% - 48px) / 3); */
 }
 
-
-
 .photo {
-  padding-top: 120px;
+  padding-top: 0px;
   padding-bottom: 120px;
 }
-
-
 
 /* PEOPLE */
 
@@ -325,6 +318,7 @@ margin-right: 0;
   letter-spacing: 0.02em;
   color: var(--main-color);
   margin-bottom: 8px;
+  margin-top: 32px;
 }
 
 .people-under-title {
@@ -332,7 +326,7 @@ margin-right: 0;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  padding-bottom: 152px;
+  padding-bottom: 32px;
 }
 
 /* FOOTER */
@@ -367,6 +361,7 @@ margin-right: 0;
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
   margin-top: 16px;
+  width: 264px;
 }
 
 /* PORTFOLIO */
@@ -374,6 +369,7 @@ margin-right: 0;
 /* main content*/
 
 .portfolio {
+  padding-bottom: 120px;
 }
 
 .visually-hidden {
@@ -381,8 +377,10 @@ margin-right: 0;
 
 .portfolio-choose {
   display: flex;
-  align-items: center;
-  
+  gap: 24px;
+  justify-content: center;
+  padding-top: 96px;
+  margin-bottom: 72px;
 }
 
 .portfolio-choose-btn {
@@ -396,12 +394,16 @@ margin-right: 0;
   color: var(--btn-color);
   border: none;
   cursor: pointer;
+  border: 1px solid var(--footer-text-color);
+  border-radius: 4px;
+  padding: 12px 24px;
 }
 
 .portfolio-choose-btn:hover,
 .portfolio-choose-btn:focus {
   background-color: var(--btn-color);
   color: var(--main-white-color);
+  border-color: transparent;
 }
 
 .portfolio-photo-list {
@@ -409,6 +411,12 @@ margin-right: 0;
   flex-wrap: wrap;
   gap: 48px 24px;
   justify-content: center;
+}
+
+.portfolio-box {
+  border: 1px solid var(--footer-text-color);
+  border-top-width: 0px;
+  padding: 32px 16px;
 }
 
 .portfolio-photo-item {
@@ -419,6 +427,7 @@ margin-right: 0;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-color);
+  margin-bottom: 8px;
 }
 
 .portfolio-photo-text {
