@@ -107,6 +107,7 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #E7E9FC;
 }
 
 .header > .container {
@@ -328,7 +329,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-color);
   margin-bottom: 8px;
-  margin-top: 32px;
 }
 
 .people-under-title {
@@ -336,7 +336,6 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  padding-bottom: 32px;
 }
 
 /* FOOTER */
